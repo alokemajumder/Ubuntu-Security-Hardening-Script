@@ -14,6 +14,9 @@ This script provides a comprehensive approach to hardening Ubuntu systems, align
 - **Vulnerability Scanning**: Integrates ClamAV for malware scanning and Debsecan for vulnerability scanning.
 - **Cron Job Security**: Secures cron jobs by restricting permissions.
 - **Core Dump Restrictions**: Limits the system's ability to create core dumps.
+- **OpenSCAP Integration**: Automates the scanning process using the SCAP Security Guide to assess system compliance with security standards.
+- **Comprehensive Logs and Reports**: Generates detailed reports on system compliance and vulnerabilities.
+
 
 ## Prerequisites
 
