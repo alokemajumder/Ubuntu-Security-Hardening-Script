@@ -22,12 +22,11 @@ Before running the script, ensure you have root access to your Ubuntu  server.
 ## Installation
 
 1. **Download the Script**:
+
+
    You can download the script directly using wget or curl, or you can clone this repository.
 
-   ```bash
-   wget https://example.com/stig_harden_ubuntu.sh
-   # OR
-   curl -O https://example.com/stig_harden_ubuntu.sh` 
+  
 
 2.  **Make the Script Executable**: Change the script's permissions to make it executable.
     
