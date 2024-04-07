@@ -35,13 +35,13 @@ Before running the script, ensure you have root access to your Ubuntu  server.
     
   
     
-    `chmod +x stig_harden_ubuntu.sh` 
+    `chmod +x openscap_stig_harden_ubuntu.sh` 
     
 3.  **Run the Script**: Execute the script as the root user to apply the security configurations.
     
    
     
-    `sudo ./stig_harden_ubuntu.sh` 
+    `sudo ./openscap_stig_harden_ubuntu.sh` 
     
 
 ## Usage
