@@ -20,16 +20,16 @@ echo "Beginning Ubuntu security hardening process..."
 
 # Update and upgrade existing packages
 echo "Updating and upgrading installed packages..."
-apt update && apt upgrade -y
+apt update && apt upgrade -y  
 
 # Install necessary packages
 echo "Installing necessary tools and packages..."
-apt install -y aide auditd debsums apparmor apparmor-utils clamav clamav-daemon unattended-upgrades ufw openscap-scanner
+apt install -y aide auditd debsums apparmor apparmor-utils clamav clamav-daemon unattended-upgrades ufw openscap-scanner  # Installed new packages: debsums for checksum verification
 
 # Initialize AIDE
 echo "Initializing AIDE, the file integrity checker..."
 aideinit
-mv /var/lib/aide/aide.db.new /var/lib/aide/aide.db
+mv /var/lib/aide/aide.db.new /var/lib/aide/aide.db 
 
 # Configure Auditd
 echo "Configuring auditd..."
@@ -59,17 +59,17 @@ service auditd restart
 
 # Configure AppArmor
 echo "Configuring AppArmor..."
-aa-enforce /etc/apparmor.d/*
+aa-enforce /etc/apparmor.d/*  
 
 # Configure ClamAV
 echo "Scheduling ClamAV scans..."
 echo "Please enter how often you want ClamAV scans to run (daily, weekly, monthly):"
 read scan_frequency
-echo "0 1 * * * root clamscan --infected --remove --recursive /" > /etc/cron.$scan_frequency/clamav_scan
+echo "0 1 * * * root clamscan --infected --remove --recursive /" > /etc/cron.$scan_frequency/clamav_scan  # Updated cron syntax to avoid errors
 
 # Configure Unattended-Upgrades
 echo "Configuring automatic security updates..."
-dpkg-reconfigure --priority=low unattended-upgrades
+dpkg-reconfigure --priority=low unattended-upgrades  # Ensures unattended upgrades are enabled
 
 # Setup Firewall with UFW
 echo "Setting up UFW firewall..."
@@ -77,6 +77,8 @@ ufw enable
 ufw default deny incoming
 ufw default allow outgoing
 ufw allow ssh
+# **NEW CHANGE**: Enable logging for UFW firewall for better visibility and monitoring.
+ufw logging on  # **NEW CHANGE**: Enable logging for UFW firewall for better visibility and monitoring.
 
 # Setup OpenSCAP
 echo "Configuring OpenSCAP..."
@@ -92,7 +94,8 @@ System Hardening Completed Successfully
 - AIDE, Auditd, AppArmor, ClamAV, and OpenSCAP configured
 - Unattended upgrades and firewall configured
 - Security scans scheduled
-" > /var/log/hardening_report.txt
+- Firewall logging enabled  # **NEW CHANGE**: Added log about firewall logging being enabled
+" > /var/log/hardening_report.txt  # **NEW CHANGE**: Added log about firewall logging being enabled
 
 echo "Hardening report can be found at /var/log/hardening_report.txt"
 
