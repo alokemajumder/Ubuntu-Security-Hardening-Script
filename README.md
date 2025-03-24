@@ -16,6 +16,9 @@ This script provides a comprehensive approach to hardening Ubuntu systems, align
 - **Core Dump Restrictions**: Limits the system's ability to create core dumps.
 - **OpenSCAP Integration**: Automates the scanning process using the SCAP Security Guide to assess system compliance with security standards.
 - **Comprehensive Logs and Reports**: Generates detailed reports on system compliance and vulnerabilities.
+- **Added UFW Firewall Logging**: 
+  - Introduced the command `ufw logging on` to enable firewall logging in UFW.
+  - This addition ensures that firewall activities are logged for better visibility and auditing of network traffic and security events.
 
 
 ## Prerequisites
