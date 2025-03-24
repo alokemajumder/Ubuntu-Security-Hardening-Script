@@ -1,3 +1,18 @@
+
+
+![GitHub stars](https://img.shields.io/github/stars/alokemajumder/Ubuntu-Security-Hardening-Script?style=social)
+![GitHub forks](https://img.shields.io/github/forks/alokemajumder/Ubuntu-Security-Hardening-Script?style=social)
+![GitHub issues](https://img.shields.io/github/issues/alokemajumder/Ubuntu-Security-Hardening-Script)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/alokemajumder/Ubuntu-Security-Hardening-Script)
+![GitHub](https://img.shields.io/github/license/alokemajumder/Ubuntu-Security-Hardening-Script)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/alokemajumder/Ubuntu-Security-Hardening-Script)
+![GitHub contributors](https://img.shields.io/github/contributors/alokemajumder/Ubuntu-Security-Hardening-Script)
+![GitHub last commit](https://img.shields.io/github/last-commit/alokemajumder/Ubuntu-Security-Hardening-Script)
+![GitHub top language](https://img.shields.io/github/languages/top/alokemajumder/Ubuntu-Security-Hardening-Script)
+![Dependencies](https://img.shields.io/librariesio/github/alokemajumder/Ubuntu-Security-Hardening-Script)
+![Code size](https://img.shields.io/github/languages/code-size/alokemajumder/Ubuntu-Security-Hardening-Script)
+![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)
+
 ## Ubuntu Security Hardening Script
 
 This script provides a comprehensive approach to hardening Ubuntu systems, aligning with DISA-STIG compliance for Ubuntu 20.04 LTS minimum. It includes a range of security enhancements and configurations designed to strengthen the security posture of Ubuntu servers.
